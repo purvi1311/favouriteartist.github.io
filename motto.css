@@ -1,0 +1,128 @@
+
+/* Style the body */
+body {
+ 
+    background-color:#686D76;
+  
+  z-index: -1 ;
+  color:white;
+  text-align:center;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  top:20%;
+ 
+
+}
+.ul{
+    list-style: none;
+}
+  
+
+
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color:#373a40  ;
+  top:5%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+ 
+}
+
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color:#1c639f;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+
+.side  {
+  flex: 30%;
+  background-color:#686D76;
+  padding: 90px;
+  
+  
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+
+/* Main column */
+.main {
+  flex: 50%;
+  background-color:#686D76;
+  padding:40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:white;
+}
+
+.side1 {
+    flex: 80%;
+    background-color: #686D76;
+    padding: 40px;
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: left;
+  background:#373a40  ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:white;
+  height:90px;
+  font-size:10px;
+ 
+}
+
+
+
+.xyz{
+    width: 100%;
+    height:auto;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar ,.image,.video-responsive,.side1{  
+    flex-direction: column;
+  }
+}
